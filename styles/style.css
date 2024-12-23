@@ -79,7 +79,7 @@ ol {
 }
 
 .content__list-container {
-  overflow-x: hidden;
+  overflow-x: auto;
   height: 298px;
   position: relative;
 }
@@ -131,7 +131,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif; 
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
@@ -148,7 +148,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif; 
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -265,6 +265,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   font: inherit;
   font-weight: 700;
   cursor: pointer;
+  height: 34px;
 }
 
 .button:hover {
@@ -288,13 +289,17 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   padding: 6px 73.5px;
 }
 
 .more-button {
   width: 100%;
-  height: 34px;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 1px;
+  text-decoration-thickness: 1px;
 }
 
 .content__card-link_current {
@@ -302,18 +307,22 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 }
 
 .content__list-item {
-  cursor: pointer;
   padding: 0 3px;
 }
 
-.content__list-item:focus {
+.content__card-link {
+  cursor: pointer;
+  display: block;
+}
+
+.content__card-link:focus {
   outline: none;
 }
 
-.content__list-item:focus-visible {
+.content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
 }
